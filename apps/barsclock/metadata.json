@@ -1,0 +1,21 @@
+{ "id": "barsclock",
+  "name": "Bars clock",
+  "shortName":"Bars clock",
+  "version":"0.16",
+  "description": "A clock with three or four bars for different data at the bottom",
+  "icon": "app.png",
+  "type": "clock",
+  "tags": "clock",
+  "supports" : ["BANGLEJS2"],
+  "allow_emulator":true,
+  "readme": "README.md",
+  "storage": [
+    {"name":"barsclock.app.js","url":"app.js"},
+    {"name":"barsclock.img","url":"app-icon.js","evaluate":true},
+    {"name":"barsclock.settings.js","url":"settings.js"},
+    {"name":"barsclock.default.json","url":"default.json"}
+   ],
+   "data": [
+     {"name":"barsclock.json"}
+   ]
+}
