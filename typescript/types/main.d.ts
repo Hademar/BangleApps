@@ -1635,8 +1635,8 @@ declare class Graphics<IsBuffer extends boolean = boolean> {
    * @returns {any} The instance of Graphics this was called on, to allow call chaining
    * @url http://www.espruino.com/Reference#l_Graphics_setColor
    */
-  setColor(r: number, g: number, b: number): number;
-  setColor(col: ColorResolvable): number;
+  setColor(r: number, g: number, b: number): Graphics;
+  setColor(col: ColorResolvable): Graphics;
 
   /**
    * Set the background color to use for subsequent drawing operations.
@@ -1650,8 +1650,8 @@ declare class Graphics<IsBuffer extends boolean = boolean> {
    * @returns {any} The instance of Graphics this was called on, to allow call chaining
    * @url http://www.espruino.com/Reference#l_Graphics_setBgColor
    */
-  setBgColor(r: number, g: number, b: number): number;
-  setBgColor(col: ColorResolvable): number;
+  setBgColor(r: number, g: number, b: number): Graphics;
+  setBgColor(col: ColorResolvable): Graphics;
 
   /**
    * Get the color to use for subsequent drawing operations
