@@ -1,7 +1,7 @@
 { "id": "barsclock",
   "name": "Bars clock",
   "shortName":"Bars clock",
-  "version":"0.16",
+  "version":"0.01",
   "description": "A clock with three or four bars for different data at the bottom",
   "icon": "app.png",
   "type": "clock",
