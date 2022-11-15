@@ -1,0 +1,14 @@
+{
+  "id": "widbatvp",
+  "name": "Battery Widget (Vertical Percentage)",
+  "version": "0.01",
+  "description": "Slim, vertical battery widget with percentages that only takes up 12px",
+  "icon": "widget.png",
+  "type": "widget",
+  "tags": "widget,battery",
+  "supports": ["BANGLEJS","BANGLEJS2"],
+  "allow_emulator": true,
+  "storage": [
+    {"name":"widbatvp.wid.js","url":"widget.js"}
+  ]
+}
