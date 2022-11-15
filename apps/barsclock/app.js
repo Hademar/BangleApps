@@ -126,30 +126,30 @@ function draw() {
   g.setColor(colorBg);
   g.fillRect(0, widgetOffset, screenWidth, h2 + 22);
 
+  const date = new Date();
   // time
   g.setFontRobotoRegular50NumericOnly();
   g.setColor(colorFg);
   if (!showBigWeather) {
     g.setFontAlign(0, -1);
-    g.drawString(locale.time(new Date(), 1), screenWidth / 2, h1 + 6);
+    g.drawString(locale.time(date, 1), screenWidth / 2, h1 + 6);
   }
   else {
     g.setFontAlign(-1, -1);
-    g.drawString(locale.time(new Date(), 1), 2, h1 + 6);
+    g.drawString(locale.time(date, 1), 2, h1 + 6);
   }
-  now = Math.round(new Date().getTime() / 1000);
+  now = Math.round(date.getTime() / 1000);
 
   // date & dow
   g.setFontRobotoRegular21();
   if (!showBigWeather) {
     g.setFontAlign(0, 0);
-    const d = new Date();
-    g.drawString(`${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}`, screenWidth / 2, h2);
-    g.drawString(locale.dow(new Date()), screenWidth / 2, h2 + dowOffset);
+    g.drawString(locale.date(date, true), screenWidth / 2, h2);
+    g.drawString(locale.dow(date), screenWidth / 2, h2 + dowOffset);
   } else {
     g.setFontAlign(-1, 0);
-    g.drawString(locale.date(new Date()), 2, h2);
-    g.drawString(locale.dow(new Date()), 2, h2 + dowOffset, 1);
+    g.drawString(locale.date(date, true), 2, h2);
+    g.drawString(locale.dow(date), 2, h2 + dowOffset, 1);
   }
 
   // weather
