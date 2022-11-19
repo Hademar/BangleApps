@@ -125,10 +125,4 @@ g.clear();
 Bangle.loadWidgets();
 Bangle.drawWidgets();
 
-setInterval(() => {
-  // keep screen on
-  Bangle.setLCDBrightness(.3);
-  Bangle.setLCDPower(1);
-}, 1000);
-
 draw();
