@@ -1,0 +1,14 @@
+{ "id": "lights",
+  "name": "Lights",
+  "shortName":"Lights",
+  "version":"0.01",
+  "description": "An app for controlling lights",
+  "icon": "app.png",
+  "tags": "",
+  "supports" : ["BANGLEJS2"],
+  "readme": "README.md",
+  "storage": [
+    {"name":"lights.app.js","url":"app.js"},
+    {"name":"lights.img","url":"app-icon.js","evaluate":true}
+  ]
+}
